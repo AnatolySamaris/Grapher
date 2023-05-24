@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <h1>Grapher</h1>
+    <div id="graph-container"></div>
+    <textarea id="matrix-input" placeholder="Введите матрицу смежности здесь"></textarea>
+    <button id="add-vertex-btn">Добавить вершину</button>
+    <button id="add-edge-btn">Добавить ребро</button>
+    <button id="add-arc-btn">Добавить дугу</button>
+    <button id="build-graph-btn">Построить по матрице</button>
+    <button id="clear-graph-btn">Очистить граф</button>
+
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
